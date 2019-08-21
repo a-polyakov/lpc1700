@@ -127,8 +127,9 @@ public class NetPC extends Thread
 			{
 				index.writeLog("Ошибка при соединении с PC: " + e.getMessage());
 			}
-			catch (InterruptedException e)
+			catch (Exception e)
 			{
+				e.printStackTrace();
 			}
 	}
 

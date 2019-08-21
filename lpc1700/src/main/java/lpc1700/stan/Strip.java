@@ -591,7 +591,7 @@ public class Strip
 	public String toString()
 	{
 		return "strip\t"+
-				party.str_num+"\t"+id+"\t"+f4a_height+"\t"+out_width+"\t"+f4a_length+"\t" +
+				((party!=null)?party.str_num:"")+"\t"+id+"\t"+f4a_height+"\t"+out_width+"\t"+f4a_length+"\t" +
 				out_height+"\t"+out_width+"\t"+getLength()+"\t"+
 				t1_sred+"\t"+t2_sred+"\t"+t3_sred+"\t"+t_out_sred+"\t"+t6_sred +"\t"+
 				timeStart+"\t"+timeT2+"\t"+timeT3+"\t"+timeOut+"\t"+timeT6+"\t"+timeEnd;
